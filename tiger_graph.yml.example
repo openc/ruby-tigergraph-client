@@ -1,0 +1,5 @@
+development:
+  scheme: http
+  host: localhost
+  graph: example
+  port: 9000
