@@ -87,7 +87,7 @@ class TigerGraphClient
     DDL.new(binding)
   end
 
-  # everything below is private
+  private
 
   def get_path(path)
     get_body(http_client.get("#{base_url}#{path}"))
@@ -130,14 +130,4 @@ class TigerGraphClient
   def get_body(response)
     response.body
   end
-
-  private(
-    :base_url,
-    :http_client,
-    :edge_url,
-    :vertex_url,
-    :find_at,
-    :get_body,
-    :get_path,
-  )
 end
