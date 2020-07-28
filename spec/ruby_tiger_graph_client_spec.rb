@@ -1,5 +1,5 @@
 require "spec_helper"
-require "./lib/ruby_tiger_graph_client"
+require "./lib/ruby_tiger_graph_client.rb"
 #mock this all
 
 RSpec.describe TigerGraphClient, use_graph_database: true do # rubocop:disable Style/MultilineIfModifier
